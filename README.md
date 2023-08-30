@@ -1,13 +1,17 @@
 # Noah-Note-Taker
+Challenge 11
+
+## Description
+I built this project to demonstrate my understanding of using Express.js. While working on this project, I proved that I was able to successfully create a full stack application with using express.js to connect to a backend. For this project we used a json file to store data (notes), and it is fully functional with a user being able to save/delete the notes that they take.
+
+## Installation
+This project is deployed on Heroku and can viewed at the link below.
+
+## Usage
+This project is used to provide the user with an application that will act as a digital journal that saves typed out notes. The user has the ability to give the notes a title and then add to them with a body of text. The user can also delete specific notes once they aren't needed anymore.
+
+## Video Submission
 
 
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+
+
