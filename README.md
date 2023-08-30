@@ -14,6 +14,9 @@ This project is used to provide the user with an application that will act as a 
 https://nameless-retreat-03729-f5237bb0c2d5.herokuapp.com/
 
 ## Screenshots of Application
+<img width="1121" alt="Screenshot 2023-08-30 at 4 03 43 PM" src="https://github.com/noahsimcoe/Noah-Note-Taker/assets/109931528/e00044b7-56fb-45df-bbd7-f1d1edd30f6f">
+<img width="1128" alt="Screenshot 2023-08-30 at 4 05 21 PM" src="https://github.com/noahsimcoe/Noah-Note-Taker/assets/109931528/699c030c-cbf6-40df-8527-496ecca93ea8">
+
 
 
 
