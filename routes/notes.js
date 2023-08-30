@@ -14,7 +14,7 @@ router.post("/notes", (req, res) => {
         const newNote = {
             title,
             text,
-            note_id: uuidv4(),
+            id: uuidv4(),
         };
         readAndAppend(newNote, "./db/db.json");
         const response = {
@@ -27,23 +27,14 @@ router.post("/notes", (req, res) => {
     }
 });
 
-router.delete("/notes/:note_id", (req, res) => {
-    let dbInfo = JSON.parse(fs.readFileSync("./db/db.json"))
-    deleteNote(req.params.note_id, dbInfo);
-    res.json(true);
-});
-
-function deleteNote(id, dbInfo) {
-    for (let i = 0; i < dbInfo.length; i++) {
-        let note = dbInfo[i];
-
-        if (note.note_id == id) {
-            dbInfo.splice(i, 1);
-            fs.writeFileSync(
-                path.join(_dirname, '../db/db.json'),
-                JSON.stringify(dbInfo, null, 2)
-            );
-            break;
-}}}
+router.delete("/notes/:id", (req, res) => {
+    fs.readFile("db/db.json", "utf8", (err, data) => {
+        const noteList = JSON.parse(data);
+        const updatedNoteList = noteList.filter( (note) => {return note.id != req.params.id});
+        fs.writeFile("db/db.json", JSON.stringify(updatedNoteList, null, 4), (err) => {
+            res.json(updatedNoteList);
+        });
+    });
+  })
 
 module.exports = router;
